@@ -64,3 +64,7 @@ if __name__ == "__main__":
             sleep(10)
         finally:
             dr.quit()
+    else:
+        current_day = datetime.datetime.now().strftime("%A")
+        print(f"Today is {current_day}, and this script cannot run on the weekend")
+        
